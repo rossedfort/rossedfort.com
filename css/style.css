@@ -92,3 +92,7 @@ a {
   margin-right: 10px;
   width: 30px;
 }
+
+.description h4, h5 {
+  margin-top: 50px;
+}
