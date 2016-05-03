@@ -1,0 +1,35 @@
+.star-animate-one {
+  animation: hideshow 10s ease infinite;
+}
+
+.star-animate-two {
+  animation: hideshow 10s ease infinite;
+  animation-delay: 3s;
+}
+
+.star-animate-three {
+  animation: hideshow 10s ease infinite;
+  animation-delay: 6s;
+}
+
+.star-animate-four {
+  animation: hideshow 10s ease infinite;
+  animation-delay: 9s;
+}
+
+@keyframes hideshow {
+  0% { opacity: 1; }
+  25% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.cloud {
+  animation: moveaccross 30s linear infinite;
+}
+
+
+@keyframes moveaccross {
+  0% { transform: translateX(2160px); }
+  100% { transform: translateX(-2160px); }
+}
