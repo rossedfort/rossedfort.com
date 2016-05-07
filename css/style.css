@@ -1,3 +1,16 @@
+body .main {
+  background-image: url('../images/website-background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.welcome-text {
+  position: absolute;
+  left: 42%;
+  top: 10%;
+  color: #fff;
+}
+
 .star-animate-one {
   animation: hideshow 10s ease infinite;
 }
@@ -21,14 +34,4 @@
   0% { opacity: 1; }
   50% { opacity: 0; }
   100% { opacity: 1; }
-}
-
-.cloud {
-  animation: moveaccross 30s linear infinite;
-}
-
-
-@keyframes moveaccross {
-  0% { transform: translateX(2160px); }
-  100% { transform: translateX(-2160px); }
 }
