@@ -1,7 +1,16 @@
-body .main {
+body .web {
   overflow-x: hidden;
   overflow-y: hidden;
   background-image: url('../images/website-background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+body .mobile {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-image: url('../images/website-background-mobile.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
