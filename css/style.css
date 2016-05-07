@@ -1,15 +1,30 @@
 body .main {
+  overflow-x: hidden;
+  overflow-y: hidden;
   background-image: url('../images/website-background.png');
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
 }
 
 .welcome-text {
-  position: absolute;
-  left: 42%;
+  position: fixed;
+  left: 41%;
   top: 10%;
   color: #fff;
 }
+
+.centered {
+  color: #fff;
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  top: 20%;
+  left: 50%;
+  margin-left: -200px; /* margin is -0.5 * dimension */
+  margin-top: -100px;
+}​
+
 
 .star-animate-one {
   animation: hideshow 10s ease infinite;
