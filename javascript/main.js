@@ -1,4 +1,8 @@
 $(document).ready(function() {
+  $('#fullpage').fullpage({
+		verticalCentered: false,
+    css3: false
+	});
   if (isMobile.any()) {
     $('.main').addClass('mobile');
   } else {

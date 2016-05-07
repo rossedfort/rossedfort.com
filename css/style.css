@@ -16,22 +16,6 @@ body .mobile {
   background-position: center center;
 }
 
-.welcome-text {
-  font-weight: 200;
-}
-
-.centered {
-  color: #fff;
-  position: absolute;
-  width: 400px;
-  height: 200px;
-  top: 20%;
-  left: 50%;
-  margin-left: -200px; /* margin is -0.5 * dimension */
-  margin-top: -100px;
-}​
-
-
 .star-animate-one {
   animation: hideshow 10s ease infinite;
 }
@@ -55,4 +39,8 @@ body .mobile {
   0% { opacity: 1; }
   50% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+.card-image  img {
+  width: 600px;
 }
