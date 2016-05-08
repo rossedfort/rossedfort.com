@@ -16,6 +16,23 @@ body .mobile {
   background-position: center center;
 }
 
+.welcome-text {
+  color: #fff;
+  position: absolute;
+  left: 35%;
+  top: 20%;
+  z-index: 1;
+}
+
+.headline {
+  font-weight: 100;
+}
+
+.description {
+  font-style: italic;
+  font-weight: 100;
+}
+
 .star-animate-one {
   animation: hideshow 10s ease infinite;
 }
@@ -46,7 +63,7 @@ body .mobile {
   width: 600px;
 }
 
-.icons img {
+.icons .icon img {
   width: 85px;
   padding: 0 10px;
 }
