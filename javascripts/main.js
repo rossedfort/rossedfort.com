@@ -3,7 +3,7 @@ $(document).ready(function() {
     anchors:['home', 'about'],
     navigation: true,
     navigationPosition: 'right',
-    navigationTooltips: ['home', 'About'],
+    navigationTooltips: ['home', 'about'],
     showActiveTooltip: false,
     slidesNavigation: true,
     slidesNavPosition: 'bottom',

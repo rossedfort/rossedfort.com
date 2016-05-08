@@ -41,6 +41,79 @@ body .mobile {
   100% { opacity: 1; }
 }
 
-.card-image  img {
+.card-image img {
+  padding-bottom: 8rem;
   width: 600px;
+}
+
+.icons img {
+  width: 85px;
+  padding: 0 10px;
+}
+
+.icons .icon {
+  display: inline-block;
+}
+
+.icon p {
+  font-size: 1rem;
+  color: #b3b3b3;
+  font-family: Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+.icons h5 {
+  color: #b3b3b3;
+  font-family: Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 2rem;
+  padding-bottom: 5rem;
+}
+
+#ps .ps-text,
+#ai .ai-text,
+#lr .lr-text,
+#html .html-text,
+#js .js-text,
+#css .css-text,
+#git .git-text,
+#gh .gh-text,
+#ang .ang-text,
+#emb .emb-text,
+#ruby .ruby-text {
+  position: relative;
+  visibility: hidden;
+}
+
+#ps:hover .ps-text,
+#ai:hover .ai-text,
+#lr:hover .lr-text,
+#html:hover .html-text,
+#js:hover .js-text,
+#css:hover .css-text,
+#git:hover .git-text,
+#gh:hover .gh-text,
+#ang:hover .ang-text,
+#emb:hover .emb-text,
+#ruby:hover .ruby-text {
+  visibility: visible;
+  animation: shake 0.25s linear;
+}
+
+@keyframes shake {
+  20% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  40% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  60% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  80% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
