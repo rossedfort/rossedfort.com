@@ -16,11 +16,18 @@ body .mobile {
   background-position: center center;
 }
 
-.welcome-text {
+.welcome-text-web {
   color: #fff;
   position: absolute;
   left: 38%;
   top: 20%;
+  z-index: 1;
+}
+
+.welcome-text-mobile {
+  color: #fff;
+  position: absolute;
+  top: 10%;
   z-index: 1;
 }
 

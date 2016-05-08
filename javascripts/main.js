@@ -42,8 +42,10 @@ $(document).ready(function() {
   });
   if (isMobile.any()) {
     $('.main').addClass('mobile');
+    $('.welcome').addClass('welcome-text-mobile');
   } else {
     $('.main').addClass('web');
+    $('.welcome').addClass('welcome-text-web');
   }
 });
 
