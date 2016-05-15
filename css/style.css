@@ -1,3 +1,27 @@
+#footer{
+  position:fixed;
+  height: 50px;
+  display:block;
+  width: 100%;
+  z-index:9;
+  text-align:center;
+  color: #f2f2f2;
+}
+
+#footer{
+  bottom:0px;
+}
+
+#footer img {
+  opacity: 0.5;
+  width: 2rem;
+  margin: 0 1rem;
+}
+
+#footer img:hover {
+  opacity: 1;
+}
+
 body .web {
   overflow-x: hidden;
   overflow-y: hidden;
@@ -19,8 +43,9 @@ body .mobile {
 .welcome-text-web {
   color: #fff;
   position: absolute;
-  left: 38%;
-  top: 20%;
+  margin-top: 17rem;
+  left: 37%;
+  top: 0%;
   z-index: 1;
 }
 
@@ -65,9 +90,10 @@ body .mobile {
   100% { opacity: 1; }
 }
 
-.card-image img {
-  padding-bottom: 8rem;
-  width: 600px;
+.me h3 {
+  font-weight: 100;
+  color: #b3b3b3;
+  margin-bottom: 10rem;
 }
 
 .icons .icon img {
@@ -104,6 +130,10 @@ body .mobile {
 #gh .gh-text,
 #ang .ang-text,
 #emb .emb-text,
+#flappy .flappy-text,
+#gbg .gbg-text,
+#lens .lens-text,
+#stalk .stalk-text,
 #ruby .ruby-text {
   position: relative;
   visibility: hidden;
@@ -140,4 +170,45 @@ body .mobile {
   80% {
     transform: translate3d(4px, 0, 0);
   }
+}
+
+#gbg:hover .gbg-text,
+#stalk:hover .stalk-text,
+#lens:hover .lens-text,
+#flappy:hover .flappy-text {
+  visibility: visible;
+  animation: appear .75s linear;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.projects img {
+  box-shadow: 5px 5px 20px #ccc;
+  display: inline-block;
+  margin: 0 3rem;
+  width: 80%;
+}
+
+.projects h3 {
+  font-weight: 100;
+  color: #b3b3b3;
+}
+
+.projects p {
+  font-size: 1.5rem;
+  font-weight: 200;
+  padding: 0 5rem;
+  color: #b3b3b3;
+}
+
+.fp-tableCell {
+  padding: 2rem 0 !important;
 }
