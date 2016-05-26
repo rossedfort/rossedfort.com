@@ -130,10 +130,10 @@ body .mobile {
 #gh .gh-text,
 #ang .ang-text,
 #emb .emb-text,
-#flappy .flappy-text,
+/*#flappy .flappy-text,
 #gbg .gbg-text,
 #lens .lens-text,
-#stalk .stalk-text,
+#stalk .stalk-text,*/
 #ruby .ruby-text {
   position: relative;
   visibility: hidden;
@@ -172,13 +172,13 @@ body .mobile {
   }
 }
 
-#gbg:hover .gbg-text,
+/*#gbg:hover .gbg-text,
 #stalk:hover .stalk-text,
 #lens:hover .lens-text,
 #flappy:hover .flappy-text {
   visibility: visible;
   animation: appear .75s linear;
-}
+}*/
 
 @keyframes appear {
   0% {
@@ -211,4 +211,15 @@ body .mobile {
 
 .fp-tableCell {
   padding: 2rem 0 !important;
+}
+
+.fp-controlArrow.fp-prev {
+  border-color: transparent rgba(74, 68, 113, 0.5); transparent transparent;
+}
+.fp-controlArrow.fp-next {
+  border-color: transparent transparent transparent rgba(74, 68, 113, 0.5);;
+}
+
+.fp-tableCell {
+  padding: 1rem 0 !important;
 }
