@@ -6,7 +6,7 @@ $(document).ready(function() {
     scrollBar: false,
     easing: 'easeInOutCubic',
     easingcss3: 'ease',
-    loopBottom: true,
+    loopBottom: false,
     loopTop: false,
     loopHorizontal: true,
     continuousVertical: false,
@@ -14,7 +14,8 @@ $(document).ready(function() {
     scrollOverflow: false,
     touchSensitivity: 15,
     normalScrollElementTouchThreshold: 5,
-
+    slidesNavigation: true,
+    slidesNavPosition: 'bottom',
     //Accessibility
     keyboardScrolling: true,
     animateAnchor: true,
@@ -24,37 +25,9 @@ $(document).ready(function() {
     controlArrows: true,
     verticalCentered: true,
     resize : false,
-    sectionsColor: ['#fff', '#fff', '#fff'],
+    sectionsColor: ['#FFFFFF', '#FFFFFF'],
     fixedElements: '#header, #footer',
     responsiveWidth: 600,
     responsiveHeight: 0,
   });
-  if (isMobile.any()) {
-    $('.main').addClass('mobile');
-    $('.welcome').addClass('welcome-text-mobile');
-  } else {
-    $('.main').addClass('web');
-    $('.welcome').addClass('welcome-text-web');
-  }
 });
-
-var isMobile = {
-    Android: function() {
-        return navigator.userAgent.match(/Android/i);
-    },
-    BlackBerry: function() {
-        return navigator.userAgent.match(/BlackBerry/i);
-    },
-    iOS: function() {
-        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-    },
-    Opera: function() {
-        return navigator.userAgent.match(/Opera Mini/i);
-    },
-    Windows: function() {
-        return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i);
-    },
-    any: function() {
-        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-    }
-};
