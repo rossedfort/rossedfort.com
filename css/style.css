@@ -1,31 +1,44 @@
-#footer {
-  top: 50px;
-  left: 50px;
-  position:fixed;
-  height: 50px;
-  display:block;
-  z-index:9;
-}
-
-#footer .headshot {
+#profile .headshot {
   width: 5rem;
-  border-radius: 50%;
-  opacity: .7;
 }
 
-#footer .headshot:hover {
-  opacity: 1;
-}
-
-#footer .icon {
+#profile .icon {
+  box-shadow: 2px 2px 5px #aaa;
+  cursor: pointer;
+  position: fixed;
   visibility: hidden;
-  border-radius: 50%;
-  width: 2rem;
-  margin: 0 1.4rem;
+  height: 2rem;
+  margin: 1.5rem .2rem 1.5rem -3.5rem;
 }
 
-#footer:hover .icon {
-  visibility: visible;
+#profile:hover #icon-1 {
+  animation: slide1 .3s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+#profile:hover #icon-2 {
+  animation: slide2 .3s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+#profile:hover #icon-3 {
+  animation: slide3 .3s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+#profile:hover #icon-4 {
+  animation: slide4 .3s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+#profile:hover #icon-5 {
+  animation: slide5 .3s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+#profile:hover #icon-6 {
+  animation: slide6 .3s ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 .main {
@@ -51,10 +64,13 @@
   font-style: italic;
 }
 
+.about h3 {
+  font-family: monospace;
+}
+
 .me h3 {
-  font-family: Helvetica, sans-serif;
-  font-weight: 100;
-  margin-bottom: 10rem;
+  font-family: monospace;
+  margin-bottom: 1rem;
 }
 
 .me h5 {
@@ -65,7 +81,6 @@
 }
 
 .icons .icon img {
-  cursor: pointer;
   width: 85px;
   padding: 0 10px;
 }
@@ -117,6 +132,66 @@
   animation: shake 0.25s linear;
 }
 
+@keyframes slide1 {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    visibility: visible;
+    transform: translateX(5rem);
+  }
+}
+
+@keyframes slide2 {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    visibility: visible;
+    transform: translateX(10rem);
+  }
+}
+
+@keyframes slide3 {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    visibility: visible;
+    transform: translateX(15rem);
+  }
+}
+
+@keyframes slide4 {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    visibility: visible;
+    transform: translateX(-5rem);
+  }
+}
+
+@keyframes slide5 {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    visibility: visible;
+    transform: translateX(-10rem);
+  }
+}
+
+@keyframes slide6 {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    visibility: visible;
+    transform: translateX(-15rem);
+  }
+}
+
 @keyframes shake {
   20% {
     transform: translate3d(-1px, 0, 0);
@@ -136,5 +211,10 @@
 }
 
 #map {
-  height: 60%;
+  height: 65%;
+}
+
+a {
+  color: #aaa;
+  text-decoration: underline;
 }

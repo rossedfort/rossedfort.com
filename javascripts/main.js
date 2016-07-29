@@ -1,5 +1,6 @@
 $(document).ready(function() {
   $('#fullpage').fullpage({
+    anchors: ['home', 'about'],
     navigation: false,
     css3: true,
     scrollingSpeed: 1000,
