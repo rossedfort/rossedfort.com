@@ -10,6 +10,11 @@
 #footer .headshot {
   width: 5rem;
   border-radius: 50%;
+  opacity: .7;
+}
+
+#footer .headshot:hover {
+  opacity: 1;
 }
 
 #footer .icon {
@@ -23,14 +28,27 @@
   visibility: visible;
 }
 
+.main {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-image: url('../images/website-background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.welcome {
+  margin-bottom: 50vh;
+  color: white;
+}
+
 .headline {
-  margin-top: -100px;
   font-weight: 100;
 }
 
 .description {
-  font-style: italic;
   font-weight: 100;
+  font-style: italic;
 }
 
 .me h3 {
@@ -118,5 +136,5 @@
 }
 
 #map {
-  height: 100%;
+  height: 60%;
 }

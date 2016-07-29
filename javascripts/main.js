@@ -22,7 +22,7 @@ $(document).ready(function() {
     recordHistory: true,
 
     //Design
-    controlArrows: true,
+    controlArrows: false,
     verticalCentered: true,
     resize : false,
     sectionsColor: ['#FFFFFF', '#FFFFFF'],
