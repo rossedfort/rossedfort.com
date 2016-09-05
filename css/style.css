@@ -1,83 +1,61 @@
-#profile .headshot {
-  width: 5rem;
-}
-
 #profile .icon {
-  box-shadow: 2px 2px 5px #aaa;
-  cursor: pointer;
-  position: fixed;
-  visibility: hidden;
   height: 2rem;
-  margin: 1.5rem .2rem 1.5rem -3.5rem;
+  margin: 1rem;
 }
 
-#profile:hover #icon-1 {
-  animation: slide1 .3s ease-in-out;
-  animation-fill-mode: forwards;
+html,body {
+  height: 100%;
+  margin: 0;
 }
 
-#profile:hover #icon-2 {
-  animation: slide2 .3s ease-in-out;
-  animation-fill-mode: forwards;
-}
-
-#profile:hover #icon-3 {
-  animation: slide3 .3s ease-in-out;
-  animation-fill-mode: forwards;
-}
-
-#profile:hover #icon-4 {
-  animation: slide4 .3s ease-in-out;
-  animation-fill-mode: forwards;
-}
-
-#profile:hover #icon-5 {
-  animation: slide5 .3s ease-in-out;
-  animation-fill-mode: forwards;
-}
-
-#profile:hover #icon-6 {
-  animation: slide6 .3s ease-in-out;
-  animation-fill-mode: forwards;
-}
-
-.main {
-  overflow-x: hidden;
-  overflow-y: hidden;
-  background-image: url('../images/website-background.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.welcome {
-  margin-bottom: 50vh;
+.content {
+  height: 100%;
+  min-height: 100%;
+  padding: 10vh 3vw;
   color: white;
 }
 
-.headline {
+html>body .content {
+  height: auto;
+}
+
+#section-one {
+  background: url('../images/bktx_dgl_lines_light.png') center center repeat scroll #5C737F;
+}
+
+#section-two {
+  color: black;
+}
+
+#section-three {
+  background: url('../images/bktx_dgl_lines_light.png') center center repeat scroll #5C737F;
+}
+
+#section-four {
+  color: black;
+}
+
+.welcome {
+  padding: 20vh 30vw;
+}
+
+.about h5 {
+  font-size: 1.2rem;
+}
+
+h5 {
   font-weight: 100;
+  line-height: 2rem;
+  /*font-style: italic;*/
 }
 
-.description {
-  font-weight: 100;
-  font-style: italic;
-}
-
-.about h3 {
-  font-family: monospace;
-}
-
-.me h3 {
-  font-family: monospace;
-  margin-bottom: 1rem;
-}
-
-.me h5 {
+h3 {
   font-family: Helvetica, sans-serif;
   font-weight: 100;
-  font-size: 2rem;
-  padding-bottom: 5rem;
+}
+
+.icons {
+  margin-top: 10rem;
 }
 
 .icons .icon img {
@@ -93,13 +71,6 @@
   font-size: 1rem;
   font-family: Helvetica, sans-serif;
   font-weight: 100;
-}
-
-.icons h5 {
-  font-family: Helvetica, sans-serif;
-  font-weight: 100;
-  font-size: 2rem;
-  padding-bottom: 5rem;
 }
 
 #ps .ps-text,
@@ -132,66 +103,6 @@
   animation: shake 0.25s linear;
 }
 
-@keyframes slide1 {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    visibility: visible;
-    transform: translateX(5rem);
-  }
-}
-
-@keyframes slide2 {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    visibility: visible;
-    transform: translateX(10rem);
-  }
-}
-
-@keyframes slide3 {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    visibility: visible;
-    transform: translateX(15rem);
-  }
-}
-
-@keyframes slide4 {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    visibility: visible;
-    transform: translateX(-5rem);
-  }
-}
-
-@keyframes slide5 {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    visibility: visible;
-    transform: translateX(-10rem);
-  }
-}
-
-@keyframes slide6 {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    visibility: visible;
-    transform: translateX(-15rem);
-  }
-}
-
 @keyframes shake {
   20% {
     transform: translate3d(-1px, 0, 0);
@@ -208,13 +119,4 @@
   80% {
     transform: translate3d(4px, 0, 0);
   }
-}
-
-#map {
-  height: 65%;
-}
-
-a {
-  color: #aaa;
-  text-decoration: underline;
 }

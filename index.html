@@ -5,132 +5,105 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <title>Ross Edfort</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-  <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-  <div id="fullpage">
-  	<div class="section main">
-      <div class="welcome center">
-        <h2 class="headline">Ross Edfort</h2>
-        <h5 class="description">Digital Artist, Web Developer, Friendly Human</h5>
+  <nav class="blue-grey darken-2">
+    <div class="nav-wrapper">
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/bank-vis">Bank Vis</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/flappy-bird">Flappy Bird</a></li>
+        <li><a href="/p5">P5</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="background content" id="section-one">
+    <div class="layer">
+      <div class="main">
+        <div class="welcome center">
+          <h3>Ross Edfort</h3>
+          <h5>Web Developer, Digital Artist, Friendly Human</h5>
+        </div>
       </div>
-  	</div>
-    <div class="section center" href="#about">
-      <div class="slide">
-        <div class="container center about">
-          <div class="row">
-            <h3>About Me</h3>
+    </div>
+  </div>
+  <div class="content" id="section-two">
+    <div class="center">
+      <div class="row me">
+        <h3>My Training</h3>
+        <h5>Through my education at the University of Denver, and the Turing School of Software and Design, I have gained a knowledge in digital art and photography, as well as a technical training in full stack web development technologies.</h5>
+        <div class="col s12 icons">
+          <div class="icon" id="ps" >
+            <img src="images/ps.png" alt="photoshop-icon" />
+            <p class="ps-text">Photoshop</p>
           </div>
+          <div class="icon" id="ai">
+            <img src="images/ai.png" alt="illustrator-icon" />
+            <p class="ai-text">Illustrator</p>
+          </div>
+          <div class="icon" id="lr">
+            <img src="images/lr.png" alt="lightroom-icon" />
+            <p class="lr-text">Lightroom</p>
+          </div>
+          <div class="icon" id="js">
+            <img src="images/js.png" alt="javascript-icon" />
+            <p class="js-text">JavaScript</p>
+          </div>
+          <div class="icon" id="html">
+            <img src="images/html.png" alt="html-icon" />
+            <p class="html-text">HTML</p>
+          </div>
+          <div class="icon" id="css">
+            <img src="images/css.png" alt="css3icon" />
+            <p class="css-text">CSS</p>
+          </div>
+          <div class="icon" id="git">
+            <img src="images/git.png" alt="git-icon" />
+            <p class="git-text">Git</p>
+          </div>
+          <div class="icon" id="gh">
+            <img src="images/gh.png" alt="github-icon" />
+            <p class="gh-text">GitHub</p>
+          </div>
+          <div class="icon" id="ang">
+            <img src="images/ang.png" alt="angular-icon" />
+            <p class="ang-text">Angular2</p>
+          </div>
+          <div class="icon" id="emb">
+            <img src="images/emb.png" alt="ember-icon" />
+            <p class="emb-text">Ember</p>
+          </div>
+          <div class="icon" id="ruby">
+            <img src="images/ruby.png" alt="ruby-icon" />
+            <p class="ruby-text">Ruby</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="center content" href="#about" id="section-three">
+    <div class="slide">
+      <div class="container center about">
+        <div class="row">
+          <h3>About Me</h3>
+          <h5>I was born in Somerset, New Jersey in 1993. As a child I had many interests, including art, nature, music, athletics, and science. Growing up, I tried Soccer, Tennis, Golf, and Swimming, but my true passion was Diving. I was a Junior Olympic level diver, competitive at a national level. The highlight of my young athletic career was winning the Junior Olympic National Championship in 2006, when I was 13 years old. Around this time, my other extra-curricular interests flourished, and I was serious about Guitar and Photography.<br><br>In 2011, I decided to accept a scholarship to the University of Denver as a Division-I Diver, and full-time student. I studied Emergent Digital Practices, a blend of media, technology, art, and design. In this program I learned to use software such as Adobe Illustrator, Photoshop, and Audition to create compelling pieces of digital art. My 4 years of Diving at a collegiate level taught me lessons in discipline, perserverence and teammwork. As a captain of the team for my final 2 years of college, I learned  how to lead a group of 25 swimmers and divers to success at a high level. Collegiate athletics taught me many valuable lessons, which are reflected in my professional career today.<br><br>Upon graduation in 2015, I was accepted to the Turing School of Software and Design, in Denver, Colorado. Turing is a 7-month developer training program, unlike any Dev Bootcamp in existence. Turing was a grueling but immensely rewarding academic endeavor, that not only taught me the technical skills necessary to become a developer, but the soft skills to thrive in any career. After finishing the program in March of 2016, I accepted a position at Wazee Digital, where I am a front-end software engineer today.</h5>
+        </div>
           <div id="profile">
-            <a href="#home"><img src="images/color-small-square.jpg" class="headshot"/></a>
-            <a href="https://www.flickr.com/photos/ross_edfort/" target="_blank"><img class="icon" id="icon-1" src="images/flickr.svg" alt=""></a>
-            <a href="https://github.com/rossedfort" target="_blank"><img class="icon" id="icon-2" src="images/github.svg" alt=""></a>
-            <a href="https://www.instagram.com/rossedfort/" target="_blank"><img class="icon" id="icon-3" src="images/insta.svg" alt=""></a>
-            <a href="https://www.linkedin.com/in/rossedfort" target="_blank"><img class="icon" id="icon-4" src="images/linkedin.svg" alt=""></a>
-            <a href="https://twitter.com/rossedfort" target="_blank"><img class="icon" id="icon-5" src="images/twitter.svg" alt=""></a>
-            <a href="mailto:rossedfort@gmail.com"><img class="icon" id="icon-6" src="images/email.png" alt=""></a>
+            <a href="https://www.flickr.com/photos/ross_edfort/" target="_blank"><img class="icon" src="images/flickr.svg" alt=""></a>
+            <a href="https://github.com/rossedfort" target="_blank"><img class="icon" src="images/github.svg" alt=""></a>
+            <a href="https://www.instagram.com/rossedfort/" target="_blank"><img class="icon" src="images/insta.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/rossedfort" target="_blank"><img class="icon" src="images/linkedin.svg" alt=""></a>
+            <a href="https://twitter.com/rossedfort" target="_blank"><img class="icon" src="images/twitter.svg" alt=""></a>
+            <a href="mailto:rossedfort@gmail.com"><img class="icon" src="images/email.png" alt=""></a>
           </div>
-          <div class="row">
-            <div class="col s6">
-              <h5>past</h5>
-              <ul>
-                <li>Somerset, New Jersey</li>
-                <br>
-                <li style="text-decoration:underline;">University of Denver</li>
-                <li><a href="http://www.du.edu/ahss/edp/" target="_blank">Emergent Digital Practices</a></li>
-                <li>Art and Business Adminstration</li>
-                <li>Swimming & Diving</li>
-                <br>
-                <li><a href="https://turing.io" target="_blank">Turing School of Software and Design</a></li>
-                <br>
-              </ul>
-            </div>
-            <div class="col s6">
-              <h5>present</h5>
-              <ul>
-                <li>Denver, CO</li>
-                <br>
-                <li>Software Engineer at <a href="http://www.wazeedigital.com/" target="_blank">Wazee Digital</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="slide">
-        <div class="container center">
-          <div class="row me">
-            <h3>My Training</h3>
-            <div class="col s12 icons">
-              <h5>
-                I have a background in digital art and photography, with a technical training in full stack web development technologies
-              </h5>
-              <div class="icon" id="ps" >
-                <img src="images/ps.png" alt="photoshop-icon" />
-                <p class="ps-text">Photoshop</p>
-              </div>
-              <div class="icon" id="ai">
-                <img src="images/ai.png" alt="illustrator-icon" />
-                <p class="ai-text">Illustrator</p>
-              </div>
-              <div class="icon" id="lr">
-                <img src="images/lr.png" alt="lightroom-icon" />
-                <p class="lr-text">Lightroom</p>
-              </div>
-              <div class="icon" id="js">
-                <img src="images/js.png" alt="javascript-icon" />
-                <p class="js-text">JavaScript</p>
-              </div>
-              <div class="icon" id="html">
-                <img src="images/html.png" alt="html-icon" />
-                <p class="html-text">HTML</p>
-              </div>
-              <div class="icon" id="css">
-                <img src="images/css.png" alt="css3icon" />
-                <p class="css-text">CSS</p>
-              </div>
-              <div class="icon" id="git">
-                <img src="images/git.png" alt="git-icon" />
-                <p class="git-text">Git</p>
-              </div>
-              <div class="icon" id="gh">
-                <img src="images/gh.png" alt="github-icon" />
-                <p class="gh-text">GitHub</p>
-              </div>
-              <div class="icon" id="ang">
-                <img src="images/ang.png" alt="angular-icon" />
-                <p class="ang-text">Angular2</p>
-              </div>
-              <div class="icon" id="emb">
-                <img src="images/emb.png" alt="ember-icon" />
-                <p class="emb-text">Ember</p>
-              </div>
-              <div class="icon" id="ruby">
-                <img src="images/ruby.png" alt="ruby-icon" />
-                <p class="ruby-text">Ruby</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="slide">
-        <div class="container">
-          <div class="travel me">
-            <h3>Some places I've Been</h3>
-          </div>
-        </div>
-        <div id="map"></div>
       </div>
     </div>
   </div>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="javascripts/main.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXp0MiNKkZnfv1jBSDDjMyJBrchd_bFvs"></script>
-  <script type="text/javascript" src="javascripts/init-map.js"></script>
-  <script type="text/javascript" src="javascripts/geolocation.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script type="text/javascript" src="javascripts/jquery.fullPage.js"></script>
 </body>
 </html>
