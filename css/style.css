@@ -37,6 +37,10 @@ html>body .content {
   color: #455a64;
 }
 
+.brand-logo {
+  margin-left: 1rem;
+}
+
 .welcome {
   padding: 20vh 30vw;
 }
