@@ -24,8 +24,7 @@ html>body .content {
 }
 
 #training {
-  background: url('../images/bktx_dgl_lines_light.png') center center repeat scroll;
-  color: #455a64;
+  background: url('../images/bktx_dgl_lines_light.png') center center repeat scroll rgba(50, 50, 50, 0.8);
 }
 
 #about {
@@ -33,8 +32,7 @@ html>body .content {
 }
 
 #portfolio {
-  background: url('../images/bktx_dgl_lines_light.png') center center repeat scroll;
-  color: #455a64;
+  background: url('../images/bktx_dgl_lines_light.png') center center repeat scroll rgba(50, 50, 50, 0.8);
 }
 
 .brand-logo {
