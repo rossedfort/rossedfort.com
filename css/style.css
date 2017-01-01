@@ -107,6 +107,10 @@ h3 {
   animation: shake 0.25s linear;
 }
 
+img.screenshot {
+  width: 100%;
+}
+
 @keyframes shake {
   20% {
     transform: translate3d(-1px, 0, 0);
