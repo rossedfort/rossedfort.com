@@ -1,115 +1,124 @@
-#profile .icon {
-  height: 2rem;
-  margin: 1rem;
-}
-
-html,body {
+html, body {
   height: 100%;
   margin: 0;
+  font-family: sans-serif;
+}
+
+#profile i {
+  width: 3rem;
+  margin: 1rem;
+  color: #555555;
 }
 
 .content {
   height: 100%;
   min-height: 100%;
-  padding: 10vh 3vw;
-  color: white;
+  padding: 5vh 3vw;
 }
 
-html>body .content {
+html > body .content {
   height: auto;
 }
 
-#section-one {
-  background: url('../images/bktx_dgl_lines_light.png') center center repeat scroll #5C737F;
+h1 {
+  color: #333333;
 }
 
-#training {
-  background: url('../images/bktx_dgl_lines_light.png') center center repeat scroll rgba(50, 50, 50, 0.8);
+h2, h3, h4, h5, h6, p {
+  color: #555555;
 }
 
-#about {
-  background: url('../images/bktx_dgl_lines_light.png') center center repeat scroll #5C737F;
+.headshot {
+  width: 100%;
+  border-radius: 50%;
 }
 
-#portfolio {
-  background: url('../images/bktx_dgl_lines_light.png') center center repeat scroll rgba(50, 50, 50, 0.8);
-}
-
-.brand-logo {
-  margin-left: 1rem;
-}
-
-.welcome {
-  padding: 20vh 30vw;
-}
-
-.about h5 {
-  font-size: 1.2rem;
-}
-
-h5 {
-  font-weight: 100;
-  line-height: 2rem;
-  /*font-style: italic;*/
-}
-
-h3 {
-  font-family: Helvetica, sans-serif;
-  font-weight: 100;
+.divider {
+  width: 100%;
+  border-bottom: 1px solid #bbbbbb;
+  margin: 20px 0;
 }
 
 .icons {
-  margin-top: 10rem;
+  display: flex;
+  justify-content: space-evenly;
+  color: #555555;
 }
 
-.icons .icon img {
-  width: 85px;
-  padding: 0 10px;
+.icons .fab {
+  cursor: pointer;
 }
 
-.icons .icon {
-  display: inline-block;
-}
-
-.icon p {
-  font-size: 1rem;
-  font-family: Helvetica, sans-serif;
-  font-weight: 100;
-}
-
-#ps .ps-text,
-#ai .ai-text,
-#lr .lr-text,
-#html .html-text,
-#js .js-text,
-#css .css-text,
-#git .git-text,
-#gh .gh-text,
-#ang .ang-text,
-#react .react-text,
-#ruby .ruby-text {
-  position: relative;
+.icons span[id*="-text"] {
   visibility: hidden;
+  font-size: 10px;
+  font-family: sans-serif;
+  font-weight: 100;
+  position: absolute;
+  margin-top: 10px;
+  color: #222222;
 }
 
-#ps:hover .ps-text,
-#ai:hover .ai-text,
-#lr:hover .lr-text,
-#html:hover .html-text,
-#js:hover .js-text,
-#css:hover .css-text,
-#git:hover .git-text,
-#gh:hover .gh-text,
-#ang:hover .ang-text,
-#react:hover .react-text,
-#ruby:hover .ruby-text {
+.icons #confluence #confluence-text,
+.icons #javascript #javascript-text {
+  margin-left: -8px;
+}
+
+.icons #angular #angular-text {
+  margin-left: -6px;
+}
+
+.icons #jira #jira-text,
+.icons #git #git-text {
+  margin-left: 6px;
+}
+
+.icons #yarn #yarn-text,
+.icons #npm #npm-text,
+.icons #sass #sass-text,
+.icons #react #react-text {
+  margin-left: 4px;
+}
+
+.icons #nodejs, #nodejs-text,
+.icons #html5, #html5-text {
+  margin-left: -2px;
+}
+
+.icons #javascript:hover #javascript-text,
+.icons #angular:hover #angular-text,
+.icons #react:hover #react-text,
+.icons #css3:hover #css3-text,
+.icons #sass:hover #sass-text,
+.icons #html5:hover #html5-text,
+.icons #nodejs:hover #nodejs-text,
+.icons #npm:hover #npm-text,
+.icons #yarn:hover #yarn-text,
+.icons #git:hover #git-text,
+.icons #github:hover #github-text,
+.icons #jenkins:hover #jenkins-text,
+.icons #jira:hover #jira-text,
+.icons #confluence:hover #confluence-text,
+.icons #adobe:hover #adobe-text,
+.icons #sketch:hover #sketch-text {
   visibility: visible;
   animation: shake 0.25s linear;
 }
 
-img.screenshot {
-  width: 100%;
-}
+/* #adobe:hover #adobe-text,
+#ai:hover #ai-text,
+#lr:hover #lr-text,
+#html:hover #html-text,
+#js:hover #js-text,
+#css:hover #css-text,
+#git:hover #git-text,
+#gh:hover #gh-text,
+#ang:hover #ang-text,
+#react:hover #react-text,
+#ruby:hover #ruby-text {
+  visibility: visible;
+  animation: shake 0.25s linear;
+} */
 
 @keyframes shake {
   20% {
@@ -117,14 +126,18 @@ img.screenshot {
   }
 
   40% {
-    transform: translate3d(2px, 0, 0);
+    transform: translate3d(1px, 0, 0);
   }
 
   60% {
-    transform: translate3d(-4px, 0, 0);
+    transform: translate3d(-1px, 0, 0);
   }
 
   80% {
-    transform: translate3d(4px, 0, 0);
+    transform: translate3d(1px, 0, 0);
   }
+}
+
+.speaking h6, .open-source h6 {
+  text-align: center;
 }
