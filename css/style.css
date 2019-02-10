@@ -2,6 +2,7 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: sans-serif;
+  background-color: #eeeeee;
 }
 
 #profile i {
@@ -11,13 +12,11 @@ html, body {
 }
 
 .content {
-  height: 100%;
+  background-color: #ffffff;
+  height: auto;
   min-height: 100%;
   padding: 5vh 3vw;
-}
-
-html > body .content {
-  height: auto;
+  box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.75);
 }
 
 h1 {
@@ -80,6 +79,7 @@ h2, h3, h4, h5, h6, p {
   margin-left: 4px;
 }
 
+.icons #github #github-text,
 .icons #nodejs, #nodejs-text,
 .icons #html5, #html5-text {
   margin-left: -2px;
@@ -105,20 +105,11 @@ h2, h3, h4, h5, h6, p {
   animation: shake 0.25s linear;
 }
 
-/* #adobe:hover #adobe-text,
-#ai:hover #ai-text,
-#lr:hover #lr-text,
-#html:hover #html-text,
-#js:hover #js-text,
-#css:hover #css-text,
-#git:hover #git-text,
-#gh:hover #gh-text,
-#ang:hover #ang-text,
-#react:hover #react-text,
-#ruby:hover #ruby-text {
-  visibility: visible;
-  animation: shake 0.25s linear;
-} */
+@media (max-width: 800px) {
+  .icons i {
+    display: flex;
+  }
+}
 
 @keyframes shake {
   20% {
@@ -138,6 +129,8 @@ h2, h3, h4, h5, h6, p {
   }
 }
 
-.speaking h6, .open-source h6 {
-  text-align: center;
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
 }
