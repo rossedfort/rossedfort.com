@@ -5,9 +5,14 @@ html, body {
   background-color: #eeeeee;
 }
 
-#profile i {
-  width: 3rem;
-  margin: 1rem;
+.profile {
+  display: flex;
+  justify-content: space-between;
+}
+
+#social i {
+  width: 30px;
+  margin: 10px;
   color: #555555;
 }
 
@@ -15,7 +20,7 @@ html, body {
   background-color: #ffffff;
   height: auto;
   min-height: 100%;
-  padding: 5vh 3vw;
+  padding: 60px;
   box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.75);
 }
 
@@ -32,75 +37,31 @@ h2, h3, h4, h5, h6, p {
   border-radius: 50%;
 }
 
-.divider {
-  width: 100%;
-  border-bottom: 1px solid #bbbbbb;
-  margin: 20px 0;
-}
-
 .icons {
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   color: #555555;
 }
 
-.icons .fab {
+.icons i.target {
   cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
 
-.icons span[id*="-text"] {
+.icons i.target p {
+  display: flex;
   visibility: hidden;
-  font-size: 10px;
+  font-size: 12px;
   font-family: sans-serif;
   font-weight: 100;
   position: absolute;
-  margin-top: 10px;
+  margin-top: 40px;
   color: #222222;
 }
 
-.icons #confluence #confluence-text,
-.icons #javascript #javascript-text {
-  margin-left: -8px;
-}
-
-.icons #angular #angular-text {
-  margin-left: -6px;
-}
-
-.icons #jira #jira-text,
-.icons #git #git-text {
-  margin-left: 6px;
-}
-
-.icons #yarn #yarn-text,
-.icons #npm #npm-text,
-.icons #sass #sass-text,
-.icons #react #react-text {
-  margin-left: 4px;
-}
-
-.icons #github #github-text,
-.icons #nodejs, #nodejs-text,
-.icons #html5, #html5-text {
-  margin-left: -2px;
-}
-
-.icons #javascript:hover #javascript-text,
-.icons #angular:hover #angular-text,
-.icons #react:hover #react-text,
-.icons #css3:hover #css3-text,
-.icons #sass:hover #sass-text,
-.icons #html5:hover #html5-text,
-.icons #nodejs:hover #nodejs-text,
-.icons #npm:hover #npm-text,
-.icons #yarn:hover #yarn-text,
-.icons #git:hover #git-text,
-.icons #github:hover #github-text,
-.icons #jenkins:hover #jenkins-text,
-.icons #jira:hover #jira-text,
-.icons #confluence:hover #confluence-text,
-.icons #adobe:hover #adobe-text,
-.icons #sketch:hover #sketch-text {
+.icons i.target:hover p {
   visibility: visible;
   animation: shake 0.25s linear;
 }
